@@ -52,14 +52,14 @@ struct ContentView: View {
           } //: FOREACH
           .onDelete(perform: deleteTodo)
         } //: LIST
-          .navigationBarTitle("Todo", displayMode: .inline)
+          .navigationBarTitle("ToAction", displayMode: .inline)
           .navigationBarItems(
             leading: EditButton().accentColor(themes[self.theme.themeSettings].themeColor),
             trailing:
             Button(action: {
               self.showingSettingsView.toggle()
             }) {
-              Image(systemName: "paintbrush")
+              Image(systemName: "gear")
                 .imageScale(.large)
             } //: SETTINGS BUTTON
               .accentColor(themes[self.theme.themeSettings].themeColor)
